@@ -8,10 +8,14 @@ export default function LoginForm() {
                     <form action="">
                         <div className="flex-col flex justify-center w-full p-6">
                             <div className="my-2 flex">
-                                <input className="bg-red-400 px-4 h-12 rounded-lg w-full" type="text" />
+                                <label className="block">
+                                    <input className="bg-red-400 px-4 h-12 rounded-lg w-full" type="text" />
+                                    <span className="h-inherit absolute idle-input focus-input">Электронная почта</span>
+                                </label>
                             </div>
                             <div className="my-2 flex">
                                 <input className="bg-red-400 px-4 h-12 rounded-lg w-full" type="password" />
+                                <span className="h-inherit absolute idle-input focus-input">Пароль</span>
                             </div>
                             <br />
                             <a className="underline" href="/#">Не помните пароль?</a>
