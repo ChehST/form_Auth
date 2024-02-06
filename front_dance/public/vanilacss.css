@@ -1,0 +1,45 @@
+.input__box input{
+    outline: none;
+    font-size: 1.125rem;
+    padding: 0.625rem 0.938rem;
+    border: 2px solid;
+    border-radius: 0.313rem;
+    background-color: transparent;
+    color: #5d679c;
+    transition: 0.3s;
+}
+
+.input__box input:focus{
+border-color: rgb(224, 196, 163);
+}
+
+.input__label{
+    position: absolute;
+    left: 0;
+    top: 0.803rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: #acacac;
+    pointer-events:none;
+    transition: 0.3s;
+}
+
+.eye__btn{
+    position: absolute;
+    right: 0.313rem;
+    top: 0.75rem;
+    padding: 0.25rem;
+    font-size: 1.125rem;
+    background-color: #fff;
+    color: #acacac;
+}
+
+.input__box input:focus + .input__label,
+.input__box input:valid + .input__label{
+    transform: translateY(-1.4rem) translateX(.9rem);
+    padding: 0 0.125rem;
+    font-size: 0.875rem;
+    background-color: #fff;
+    color:#5d679c;
+}
