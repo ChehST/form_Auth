@@ -10,7 +10,7 @@
 }
 
 .input__box input:focus{
-border-color: rgb(224, 196, 163);
+    border-color: rgb(224, 196, 163);
 }
 
 .input__label{
@@ -42,4 +42,13 @@ border-color: rgb(224, 196, 163);
     font-size: 0.875rem;
     background-color: #fff;
     color:#5d679c;
+}
+
+.input__box input:invalid + .input__label{
+    transform: translateY(-1.4rem) translateX(.9rem);
+    padding: 0 0.125rem;
+    font-size: 0.875rem;
+    background-color: #fff;
+    color:#f10707;
+    border-color: rgb(226, 40, 40);
 }

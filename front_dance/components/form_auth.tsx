@@ -9,11 +9,11 @@ export default function LoginForm() {
                         <div className="flex-col flex justify-center w-full p-6">
                             <div className="my-2 relative input__box">
                                 <input required className="w-full" type="email" />
-                                <label className="input__label" htmlFor="">Email</label>
+                                <label className="input__label" htmlFor="">Электронная почта</label>
                             </div>
                             <div className="my-2 relative input__box">
                                 <input required className="w-full" type="password" />
-                                <label className="input__label" htmlFor="">Email</label>
+                                <label className="input__label" htmlFor="">Пароль</label>
                                 <i className="ri-eye-line eye__btn"></i>
                             </div>
                             <br />
