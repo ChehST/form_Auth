@@ -7,15 +7,14 @@ export default function LoginForm() {
                     <p className="flex justify-center pt-10 text-xl font-bold">Войти в профиль</p>
                     <form action="">
                         <div className="flex-col flex justify-center w-full p-6">
-                            <div className="my-2 flex">
-                                <label className="block">
-                                    <input className="bg-red-400 px-4 h-12 rounded-lg w-full" type="text" />
-                                    <span className="h-inherit absolute idle-input focus-input">Электронная почта</span>
-                                </label>
+                            <div className="my-2 relative input__box">
+                                <input required className="w-full" type="email" />
+                                <label className="input__label" htmlFor="">Email</label>
                             </div>
-                            <div className="my-2 flex">
-                                <input className="bg-red-400 px-4 h-12 rounded-lg w-full" type="password" />
-                                <span className="h-inherit absolute idle-input focus-input">Пароль</span>
+                            <div className="my-2 relative input__box">
+                                <input required className="w-full" type="password" />
+                                <label className="input__label" htmlFor="">Email</label>
+                                <i className="ri-eye-line eye__btn"></i>
                             </div>
                             <br />
                             <a className="underline" href="/#">Не помните пароль?</a>
