@@ -1,4 +1,4 @@
-.input__box input{
+.input__box input:empty{
     outline: none;
     font-size: 1.125rem;
     padding: 0.625rem 0.938rem;
@@ -44,11 +44,13 @@
     color:#5d679c;
 }
 
-.input__box input:invalid + .input__label{
+.input__box input:focus + .input__label{
     transform: translateY(-1.4rem) translateX(.9rem);
     padding: 0 0.125rem;
+    background-color: #cf9f9f;
     font-size: 0.875rem;
-    background-color: #fff;
-    color:#f10707;
-    border-color: rgb(226, 40, 40);
+}
+
+.input__box input:invalid{
+    background-color: #cf9f9f;
 }
